@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/person-raising-hand.png" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <title>mannishmajhi.github.io</title>
+
+    <link rel="stylesheet" href="css/color.css" />
+    <link rel="stylesheet" href="css/format.css" />
+  </head>
+  <body>
+    <article>
+      <figure>
+        <a href="pages/profilePicture.html"
+          ><img src="img/latte.jpg" alt="Manish Majhi" id="profilePic"
+        /></a>
+      </figure>
+      <section>
+        <h1>Manish Majhi&ensp;(<em>Nishant</em>)</h1>
+        <p>
+          "Staying fit & healthy is more important; that is why I don't do
+          React!"
+        </p>
+        <details>
+          <ol>
+            <li>
+              <h2>Academic Qualification:&nbsp;</h2>
+              <span>B.Sc CSIT | Tribhuwan University</span>
+            </li>
+            <li>
+              <h2>Skills:&nbsp;</h2>
+              <span>Analytical, Communication and Socialization</span>
+            </li>
+            <li>
+              <h2>Certifications:&nbsp;</h2>
+              <span>Freshman Hacker</span>
+            </li>
+            <li>
+              <h2>Age:&nbsp;</h2>
+              <span id="age"></span>
+            </li>
+          </ol>
+        </details>
+      </section>
+    </article>
+    <aside>
+      <hr />
+      <h3>Languages Worked With</h3>
+      <hr />
+      <fieldset>
+        <img src="img/CS.png" alt="C#" class="languageIcon" />
+        <img src="img/C++.png" alt="CPP" class="languageIcon" />
+        <img src="img/HTML.png" alt="HTML" class="languageIcon" />
+        <img src="img/CSS.png" alt="CSS" class="languageIcon" />
+        <img src="img/JS.png" alt="JS" class="languageIcon" />
+        <img src="img/PHP.png" alt="PHP" class="languageIcon" />
+        <img src="img/Prolog.png" alt="Prolog" class="languageIcon" />
+        <img src="img/Python.png" alt="Python" class="languageIcon" />
+        <img src="img/MySQL.png" alt="SQL" class="languageIcon" />
+        <img src="img/Java.png" alt="Java" class="languageIcon" />
+        <img src="img/C.png" alt="C" class="languageIcon" />
+        <img src="img/Fortran.png" alt="Fortran" class="languageIcon" />
+      </fieldset>
+    </aside>
+  </body>
+  <script>
+    var year = new Date().getFullYear() - 2000;
+    let month = 0;
+    if (new Date().getMonth() + 1 < 5) {
+      //because getMonth() is 1 less than actual month
+      year--;
+      month = new Date().getMonth() + 1 - 5 + 12;
+      //+12 to modularize negative months
+      if (new Date().getDate() < 25) {
+        month--;
+      }
+    }
+    document.getElementById("age").innerHTML = `${year} year, ${month} months`;
+  </script>
+</html>

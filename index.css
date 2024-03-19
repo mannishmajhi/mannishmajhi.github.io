@@ -1,0 +1,74 @@
+#profilePic {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: min(1vh, 1vw) solid #2d2d2d;
+}
+
+h2 {
+  display: inline;
+}
+h3 {
+  text-align: center;
+  font-weight: lighter;
+}
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 2vh;
+  gap: 1vw;
+}
+details {
+  margin: 2em 0;
+}
+
+@media (orientation: landscape) {
+  article {
+    padding: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #profilePic {
+    height: 25vw;
+  }
+  figure {
+    display: inline;
+    margin-bottom: 5vh;
+  }
+  section {
+    display: inline;
+    margin-left: 5vh;
+    vertical-align: top;
+  }
+  li {
+    margin: 1vw 0;
+  }
+  .languageIcon {
+    flex: 1;
+    height: 6vw;
+    object-fit: contain;
+  }
+}
+
+@media (orientation: portrait) {
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  #profilePic {
+    width: 75vw;
+    margin: 4.75vh auto;
+    display: block;
+  }
+  li {
+    margin: 1vh 0;
+  }
+  .languageIcon {
+    flex: 1;
+    height: 6vw;
+    object-fit: contain;
+  }
+}
