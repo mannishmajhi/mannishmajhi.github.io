@@ -17,35 +17,37 @@
           ><img src="img/latte.jpg" alt="Manish Majhi" id="profilePic"
         /></a>
       </figure>
-      <section>
+      <main>
         <h1>Manish Majhi&ensp;(<em>Nishant</em>)</h1>
         <p>
           "Staying fit & healthy is more important; that is why I don't do
           React!"
         </p>
-        <details>
+        <details open>
           <ol>
             <li>
               <h2>Academic Qualification:&nbsp;</h2>
-              <span>B.Sc CSIT | Tribhuwan University</span>
+              <div class="info">B.Sc CSIT | Tribhuwan University</div>
             </li>
             <li>
               <h2>Skills:&nbsp;</h2>
-              <span>Analytical, Communication and Socialization</span>
+              <div class="info">
+                Analytical, Communication and Socialization
+              </div>
             </li>
             <li>
               <h2>Certifications:&nbsp;</h2>
-              <span>Freshman Hacker</span>
+              <div class="info">Freshman Hacker</div>
             </li>
             <li>
               <h2>Age:&nbsp;</h2>
-              <span id="age"></span>
+              <div class="info" id="age"></div>
             </li>
           </ol>
         </details>
-      </section>
+      </main>
     </article>
-    <aside>
+    <section>
       <hr />
       <h3>Languages Worked With</h3>
       <hr />
@@ -63,7 +65,7 @@
         <img src="img/C.png" alt="C" class="languageIcon" />
         <img src="img/Fortran.png" alt="Fortran" class="languageIcon" />
       </fieldset>
-    </aside>
+    </section>
   </body>
   <script>
     var year = new Date().getFullYear() - 2000;

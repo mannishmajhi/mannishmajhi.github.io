@@ -25,14 +25,16 @@ fieldset {
   div,
   span,
   details {
-    font-size: 1.25vw;
+    font-size: 1.1rem;
   }
-  h2,
   h3 {
-    font-size: 1.5vw;
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
   }
   h1 {
-    font-size: 3vw;
+    font-size: 3rem;
   }
 }
 
@@ -41,13 +43,15 @@ fieldset {
   div,
   span,
   details {
-    font-size: 2vw;
+    font-size: 0.8rem;
   }
-  h2,
   h3 {
-    font-size: 2.25vw;
+    font-size: 0.9rem;
+  }
+  h2 {
+    font-size: 1.01rem;
   }
   h1 {
-    font-size: 5vw;
+    font-size: 1.4rem;
   }
 }
