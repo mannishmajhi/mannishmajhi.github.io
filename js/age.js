@@ -22,10 +22,16 @@ if (age_months < 0) {
   age_years--;
 }
 
-if (!age_months) {
+if (!age_months && !age_days) {
+  document.getElementById("age").innerHTML = `${age_years} years`;
+} else if (!age_months) {
   document.getElementById(
     "age"
   ).innerHTML = `${age_years} years and ${age_days} days`;
+} else if (!age_days) {
+  document.getElementById(
+    "age"
+  ).innerHTML = `${age_years} years and ${age_months} months`;
 } else {
   document.getElementById(
     "age"
