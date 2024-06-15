@@ -45,6 +45,7 @@ ul {
 }
 
 footer > h3 {
+  margin: 0;
   border-top: 1px dashed darkgrey;
   border-bottom: 1px dashed darkgrey;
   padding: 0.6rem;

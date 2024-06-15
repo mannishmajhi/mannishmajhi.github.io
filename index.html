@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/color.css" />
     <link rel="stylesheet" href="./css/format.css" />
     <title>Hey!</title>
-    
+
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
@@ -67,18 +67,5 @@
       </fieldset>
     </section>
   </body>
-  <script>
-    var year = new Date().getFullYear() - 2000;
-    let month = 0;
-    if (new Date().getMonth() + 1 < 5) {
-      //because getMonth() is 1 less than actual month
-      year--;
-      month = new Date().getMonth() + 1 - 5 + 12;
-      //+12 to modularize negative months
-      if (new Date().getDate() < 25) {
-        month--;
-      }
-    }
-    document.getElementById("age").innerHTML = `${year} year, ${month} months`;
-  </script>
+  <script src="./js/age.js"></script>
 </html>
