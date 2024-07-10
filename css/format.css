@@ -19,10 +19,11 @@ fieldset {
   border: none;
 }
 
+body > * {
+  font-size: 1.1rem;
+}
+
 @media (orientation: landscape) {
-  body > * {
-    font-size: 1.1rem;
-  }
   h3 {
     font-size: 1.2rem;
   }
@@ -35,9 +36,6 @@ fieldset {
 }
 
 @media (orientation: portrait) {
-  body > * {
-    font-size: 1.1rem;
-  }
   h3 {
     font-size: 1.2rem;
   }
