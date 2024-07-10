@@ -1,87 +1,81 @@
-body {
-  box-sizing: border-box;
+article {
+  margin: 2rem;
+
+  figure {
+    width: max-content;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.1);
+  }
+  #profilePic {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+  }
+  main {
+    margin-top: 1rem;
+  }
+  details {
+    margin-top: 2rem;
+  }
+  li {
+    margin-top: 1rem;
+  }
 }
 
-#profilePic {
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  border: 4px solid #2d2d2d;
-}
+section {
+  div {
+    border-top: 1px dotted #3d3d3d;
+    border-bottom: 1px dotted #3d3d3d;
+    padding: 0.8rem;
+    text-align: center;
+    font-weight: lighter;
+  }
+  fieldset {
+    margin: 1rem;
 
-details {
-  margin-top: 2.2rem;
-}
-li > h2 {
-  display: inline;
-}
-section > h2 {
-  border-top: 1px dotted #3d3d3d;
-  border-bottom: 1px dotted #3d3d3d;
-  padding: 0.6rem;
-  text-align: center;
-  font-weight: lighter;
-}
-
-fieldset {
-  margin: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 0.5rem;
+    .languageIcon {
+      object-fit: contain;
+    }
+  }
 }
 
 @media (orientation: landscape) {
-  article {
-    padding: 2rem 2rem 1rem 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
   #profilePic {
-    width: 25vw;
+    width: 40vh;
   }
-  main {
-    display: inline;
-    margin-left: 4rem;
-    vertical-align: top;
-  }
-  li {
-    margin: 0.8rem 0;
-  }
-  .info {
+  li > h2 {
     display: inline;
   }
-  .languageIcon {
-    flex: 1;
-    height: 6vw;
-    object-fit: contain;
+  section {
+    div {
+      font-size: 1.4rem;
+    }
+    fieldset {
+      display: flex;
+      justify-content: space-around;
+
+      .languageIcon {
+        flex: 1;
+        height: 6vw;
+      }
+    }
   }
 }
 
 @media (orientation: portrait) {
-  article {
-    padding: 2rem 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   #profilePic {
     width: 60vw;
-    display: block;
   }
-  main {
-    margin-top: 2rem;
-  }
-  li {
-    margin: 1vh 0;
-  }
-  hr {
-    margin-top: 0.2rem;
-    margin-bottom: 0.1rem;
-  }
-  .languageIcon {
-    flex: 1;
-    width: 5vw;
-    object-fit: contain;
+  section {
+    div {
+      font-size: 1.3rem;
+    }
+    fieldset {
+      display: flex;
+      flex-wrap: wrap;
+
+      .languageIcon {
+        margin: 0.6rem;
+        height: 8vh;
+      }
+    }
   }
 }
