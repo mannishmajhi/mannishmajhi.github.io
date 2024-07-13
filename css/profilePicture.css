@@ -40,7 +40,7 @@ main {
   }
 }
 
-footer {
+/* footer {
   h3 {
     margin: 0;
     border-top: 1px dashed darkgrey;
@@ -55,4 +55,4 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-}
+} */
