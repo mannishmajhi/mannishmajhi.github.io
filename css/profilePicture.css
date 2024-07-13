@@ -34,10 +34,6 @@ main {
   }
 }
 @media (orientation: portrait) {
-  figure {
-    display: flex;
-    justify-content: space-around;
-  }
   img {
     height: auto;
     width: 75vw;
