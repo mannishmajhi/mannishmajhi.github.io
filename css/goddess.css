@@ -21,7 +21,7 @@ article {
   margin-top: 1rem;
 
   main {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -34,4 +34,8 @@ article {
   img {
     width: 90vw;
   }
+}
+
+li {
+  margin-bottom: 0.6rem;
 }
