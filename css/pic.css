@@ -9,9 +9,6 @@ body {
 }
 
 main {
-  figure {
-    margin: 0;
-  }
   section {
     margin-top: 4vh;
     border-top: 1px dotted darkgrey;
