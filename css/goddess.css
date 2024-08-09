@@ -4,6 +4,7 @@ body {
   background-color: black;
   font-family: sans-serif, system-ui;
 }
+
 figure {
   margin: 0;
   display: inline-block;
@@ -19,10 +20,36 @@ figure {
 
 article {
   margin-top: 1rem;
+}
 
-  main {
-    font-size: 1.6rem;
+main {
+  font-size: 1.6rem;
+  color: khaki;
+}
+
+details {
+  margin: 1rem;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  background-color: #0f0f0f;
+  transition: transform 0.5s;
+
+  summary {
+    color: khaki;
+    font-size: 1.2rem;
   }
+  summary:hover {
+    color: orange;
+    cursor: pointer;
+  }
+  p {
+    margin-left: 1rem;
+    border-top: 1px dashed grey;
+    padding-top: 0.8rem;
+  }
+}
+details:hover {
+  transform: scale(101%);
 }
 
 @media (orientation: landscape) {
@@ -37,5 +64,5 @@ article {
 }
 
 li {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
 }
