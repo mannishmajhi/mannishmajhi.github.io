@@ -91,4 +91,15 @@
       </details>
     </article>
   </body>
+  <script>
+    document.querySelectorAll("details").forEach((detail) => {
+      detail.addEventListener("click", function () {
+        document.querySelectorAll("details").forEach((d) => {
+          if (d !== detail) {
+            d.removeAttribute("open");
+          }
+        });
+      });
+    });
+  </script>
 </html>

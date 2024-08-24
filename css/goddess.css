@@ -16,12 +16,21 @@ figure {
     left: 50%;
     transform: translateX(-50%);
   }
+  @media (orientation: landscape) {
+    img {
+      height: 90vh;
+    }
+  }
+  @media (orientation: portrait) {
+    img {
+      width: 90vw;
+    }
+  }
 }
 
 article {
   margin-top: 1rem;
 }
-
 main {
   font-size: 1.6rem;
   color: khaki;
@@ -32,35 +41,23 @@ details {
   border-radius: 0.8rem;
   padding: 1rem;
   background-color: #0f0f0f;
-  transition: transform 0.5s;
 
-  summary {
-    color: khaki;
-    font-size: 1.2rem;
-  }
-  summary:hover {
-    color: orange;
-    cursor: pointer;
-  }
   p {
     margin-left: 1rem;
     border-top: 1px dashed grey;
     padding-top: 0.8rem;
   }
 }
-details:hover {
-  transform: scale(101%);
+summary {
+  color: khaki;
+  font-size: 1.2rem;
 }
-
-@media (orientation: landscape) {
-  img {
-    height: 90vh;
-  }
+summary:hover {
+  color: orange;
+  cursor: pointer;
 }
-@media (orientation: portrait) {
-  img {
-    width: 90vw;
-  }
+details[open] summary:hover {
+  color: khaki;
 }
 
 li {
