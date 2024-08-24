@@ -7,7 +7,11 @@ body {
   background-color: black;
   color: white;
 }
-
+main {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 section {
   margin-top: 4vh;
   border-top: 1px dotted darkgrey;
