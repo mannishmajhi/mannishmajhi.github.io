@@ -9,7 +9,7 @@ main {
   align-items: center;
   height: 100dvh;
   gap: 0.5rem;
-  background-image: url("../img/background.png");
+  background-image: url("./img/background.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
