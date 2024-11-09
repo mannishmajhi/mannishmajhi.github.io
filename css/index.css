@@ -39,15 +39,35 @@ article::after {
   content: close-quote;
 }
 
-/* details {
-  margin-top: 2rem;
-
-  li {
+@media (orientation: landscape) {
+  details {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  summary {
+    text-decoration: underline;
+  }
+  details li {
     margin-top: 1rem;
   }
-  @media (orientation: landscape) {
-    li > h2 {
-      display: inline;
-    }
+  details h2 {
+    display: inline;
   }
-} */
+}
+@media (orientation: portrait) {
+  details {
+    display: none;
+    margin-top: 1rem;
+  }
+  summary {
+    text-decoration: underline;
+  }
+  details li {
+    margin-top: 1rem;
+  }
+  details h2 {
+    display: inline;
+  }
+}

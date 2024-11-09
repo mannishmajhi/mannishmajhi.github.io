@@ -1,7 +1,7 @@
 body {
   margin: 1rem;
-  color: white;
-  background-color: black;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
   font-family: sans-serif, system-ui;
 }
 
@@ -33,33 +33,32 @@ article {
 }
 main {
   font-size: 1.6rem;
-  color: khaki;
+  color: hsl(0, 100%, 50%);
 }
 
 details {
   margin: 1rem;
   border-radius: 0.8rem;
   padding: 1rem;
-  background-color: #0f0f0f;
-
-  p {
-    margin-left: 1rem;
-    border-top: 1px dashed grey;
-    padding-top: 0.8rem;
-  }
+  background-color: hsl(0, 0%, 6%);
 }
+details > p {
+  margin: 0.75rem 1rem;
+  border-top: 1px dotted hsl(0, 0%, 50%);
+  padding-top: 0.75rem;
+}
+
 summary {
-  color: khaki;
+  color: hsl(0, 0%, 75%);
   font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.4s;
 }
 summary:hover {
-  color: orange;
+  color: hsl(0, 100%, 40%);
   cursor: pointer;
 }
-details[open] summary:hover {
-  color: khaki;
-}
 
-li {
+details li {
   margin-bottom: 0.8rem;
 }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Portal</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <button
+      type="button"
+      onclick="toggleCalculator('show')"
+      title="CS Calculator"
+      id="open_calculator"
+    >
+      <img
+        src="./img/calculator.png"
+        alt="calculator Icon"
+        id="calculator-icon"
+      />
+    </button>
+    <main id="search">
+      <nav>
+        <span id="bing" class="search_engines">
+          <input type="radio" name="company" value="bing" checked />
+          <img src="./img/bing.png" alt="Bing Logo" />
+        </span>
+        <span id="google" class="search_engines">
+          <input type="radio" name="company" value="google" />
+          <img src="./img/google.png" alt="Google Logo" />
+        </span>
+        <span id="yahoo" class="search_engines">
+          <input type="radio" name="company" value="yahoo" />
+          <img src="./img/yahoo.png" alt="Yahoo Logo" />
+        </span>
+      </nav>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter a query to search"
+          aria-label="Search Bar"
+          id="query_string"
+          autofocus
+        />
+        <button type="button" id="search-button" onclick="search()">
+          Search
+        </button>
+      </form>
+    </main>
+    <dialog id="calculator">
+      <button
+        type="button"
+        onclick="toggleCalculator('hide')"
+        id="close_calculator"
+      >
+        ×
+      </button>
+      <h1>
+        <span id="domain" onmouseenter="toggleDropdown('show')">Binary</span>
+      </h1>
+      <ul
+        id="domain_dropdown"
+        class="dropdown-content"
+        onmouseleave="toggleDropdown('hide')"
+      >
+        <li onclick="changeDomain('Binary')">Binary</li>
+        <li onclick="changeDomain('Quinary')">Quinary</li>
+        <li onclick="changeDomain('Octal')">Octal</li>
+        <li onclick="changeDomain('Hex')">Hex</li>
+      </ul>
+      <section id="input_section">
+        <input
+          type="text"
+          pattern="^[01]+$"
+          placeholder="First binary number"
+          aria-label="First Number"
+          id="first_num"
+          minlength="1"
+          maxlength="24"
+          autocomplete="on"
+          autofocus
+        />
+        <input
+          type="text"
+          pattern="^[01]+$"
+          placeholder="Second binary number"
+          aria-label="Second Number"
+          id="second_num"
+          minlength="1"
+          maxlength="24"
+          autocomplete="on"
+        />
+      </section>
+      <section id="result-and-operators">
+        <output id="calculation_result"></output>
+        <span id="calculation_operators">
+          <div class="operator-buttons">
+            <button type="button" onclick="calculate('+')">+</button>
+            <button type="button" onclick="calculate('-')">−</button>
+          </div>
+          <div class="operator-buttons">
+            <button type="button" onclick="calculate('*')">×</button>
+            <button type="button" onclick="calculate('/')">÷</button>
+          </div>
+        </span>
+      </section>
+    </dialog>
+  </body>
+</html>

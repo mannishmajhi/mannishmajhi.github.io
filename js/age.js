@@ -38,4 +38,6 @@ if (age_months < 0) {
 //   ).innerHTML = `${age_years} years, ${age_months} months and ${age_days} days`;
 // }
 
-document.getElementById("age").innerHTML = `${age_years} years`;
+document.getElementById(
+  "age"
+).innerHTML = `${age_years} years, ${age_months} months!`;
