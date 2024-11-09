@@ -1,5 +1,4 @@
 body {
-  margin: 1rem;
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 0%);
   font-family: sans-serif, system-ui;
@@ -7,24 +6,26 @@ body {
 
 figure {
   margin: 0;
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-
-  img {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+}
+figure img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (orientation: landscape) {
+  body {
+    margin: 2rem 4rem;
   }
-  @media (orientation: landscape) {
-    img {
-      height: 90vh;
-    }
+  figure img {
+    height: 86vh;
   }
-  @media (orientation: portrait) {
-    img {
-      width: 90vw;
-    }
+}
+@media (orientation: portrait) {
+  body {
+    margin: 1.5rem;
+  }
+  figure img {
+    width: 90vw;
   }
 }
 
@@ -37,8 +38,8 @@ main {
 }
 
 details {
-  margin: 1rem;
-  border-radius: 0.8rem;
+  margin-bottom: 0.6rem;
+  border-radius: 0.4rem;
   padding: 1rem;
   background-color: hsl(0, 0%, 6%);
 }
