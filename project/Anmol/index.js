@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function search() {
-  var text = document.getElementById("query").value;
+  var text = document.getElementById("query_string").value;
   var engine = document.querySelector('input[name="company"]:checked').value;
 
   if (engine === "bing") {
