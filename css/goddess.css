@@ -6,15 +6,14 @@ body {
 
 figure {
   margin: 0;
+  margin-bottom: 1rem;
+  text-align: center;
 }
-figure img {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
 @media (orientation: landscape) {
   body {
-    margin: 2rem 4rem;
+    margin: 2rem auto;
+    width: 50dvw;
   }
   figure img {
     height: 86vh;
@@ -29,12 +28,12 @@ figure img {
   }
 }
 
-article {
-  margin-top: 1rem;
-}
 main {
   font-size: 1.6rem;
-  color: hsl(0, 100%, 50%);
+  color: hsl(0, 100%, 40%);
+}
+li {
+  margin-bottom: 0.5rem;
 }
 
 details {
@@ -43,23 +42,21 @@ details {
   padding: 1rem;
   background-color: hsl(0, 0%, 6%);
 }
-details > p {
-  margin: 0.75rem 1rem;
-  border-top: 1px dotted hsl(0, 0%, 50%);
-  padding-top: 0.75rem;
-}
-
-summary {
+details summary {
   color: hsl(0, 0%, 75%);
   font-size: 1.2rem;
   cursor: pointer;
   transition: color 0.4s;
 }
 summary:hover {
-  color: hsl(0, 100%, 40%);
+  color: hsl(0, 100%, 50%);
   cursor: pointer;
 }
-
-details li {
-  margin-bottom: 0.8rem;
+details[open] summary {
+  color: hsl(0, 100%, 40%);
+}
+details p {
+  margin: 0.75rem 1rem;
+  border-top: 1px dotted hsl(0, 0%, 50%);
+  padding-top: 0.75rem;
 }

@@ -3,16 +3,31 @@
   accent-color: var(--takshashila-blue);
 }
 
+html {
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: light) {
+  body,
+  input {
+    background-color: aliceblue;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body,
+  input {
+    background-color: #2a2b2c;
+  }
+}
+
 body,
 figure,
 button,
 input[type="number"] {
   margin: 0;
-  background-color: aliceblue;
   font-family: sans-serif;
 }
 #banner {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid;
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -37,14 +52,14 @@ table {
 thead *,
 tbody,
 tfoot * {
-  border: 1px solid black;
+  border: 1px solid;
 }
 thead * {
   padding: 0.5rem 0.5ch;
 }
 td {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid;
+  border-right: 1px solid;
 }
 input[type="number"] {
   outline: transparent;
