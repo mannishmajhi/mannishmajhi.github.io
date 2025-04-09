@@ -1,0 +1,86 @@
+#calculator {
+  border: 4px solid hsl(120, 100%, 15%);
+  border-radius: 0.6rem;
+  padding: 1rem 2rem 2rem 2rem;
+  display: none;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: max-content;
+}
+#calculator > button:first-child {
+  border-radius: 4px;
+  padding: 2px;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  width: 1.5rem;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+#calculator > h1 {
+  margin: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#calculator select,
+#calculator #first_num > input,
+#calculator #second_num > input {
+  border-radius: 0.6rem;
+  font-size: large;
+  text-align: end;
+  color: var(--input-color);
+}
+
+#calculator #first_num,
+#calculator #second_num {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+#calculator select {
+  padding: 0.8rem 0.4rem 0.8rem 0;
+}
+
+#calculator #first_num > input,
+#calculator #second_num > input {
+  padding: 0.8rem;
+}
+
+#calculator #operations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#calculator #operations span {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#calculator #operations button {
+  border: none;
+  border-radius: 0.4rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: xx-large;
+  transition: background-color 0.4s, transform 0.4s;
+}
+#calculator #operations button:active {
+  transform: scale(0.95);
+}
+
+#calculator output {
+  text-align: right;
+  font-size: 1.2rem;
+}
+#calculator sub {
+  font-size: small;
+}
+#calculator hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+}

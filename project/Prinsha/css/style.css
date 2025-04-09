@@ -3,20 +3,9 @@
   accent-color: var(--takshashila-blue);
 }
 
-html {
-  color-scheme: light dark;
-}
-@media (prefers-color-scheme: light) {
-  body,
-  input {
-    background-color: aliceblue;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  body,
-  input {
-    background-color: #2a2b2c;
-  }
+body,
+input {
+  background-color: aliceblue;
 }
 
 body,

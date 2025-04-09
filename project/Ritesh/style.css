@@ -1,0 +1,62 @@
+body {
+    margin: 2rem 4rem;
+}
+#container {
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: auto 50dvw;
+    gap: 10dvw;
+}
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: end;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 0.4rem 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="button"] {
+    border-radius: 0.5rem;
+    width: max-content;
+    color: white;
+    background-color: grey;
+}
+
+#result {
+    line-height: 1.5rem;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th {
+    border: 1px solid black;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    background-color: lightgrey;
+}
+td {
+    border: 1px solid black;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+}

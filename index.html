@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/emoji.png" type="image/png" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./css/theme.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <title>गृहपृष्ठ</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector("header").addEventListener("click", () => {
+          window.open(window.location.origin + "/devi.html", "_blank");
+        });
+      });
+    </script>
   </head>
   <body>
     <main>
-      <figure>
-        <a href="./goddess.html" target="_blank"
-          ><img src="./img/latte.jpg" alt="Manish Majhi"
-        /></a>
-        <figcaption>
-          <h1>Manish Majhi</h1>
-        </figcaption>
-      </figure>
+      <header>Non Duality</header>
       <article>
         In the dance of cosmos, where dualities entwine,<br />
         Shiva rests as consciousness, the vast, the divine.<br />
@@ -39,26 +39,23 @@
         Together they thrive, in unison they dwell,<br />
         For one without the other is an existence in vain.
       </article>
-      <details>
-        <summary>About the author</summary>
+    </main>
+    <footer>
+      <nav>
         <ul>
           <li>
-            <h2>Academic Qualification:&nbsp;</h2>
-            <span class="info">B.Sc CSIT | Tribhuwan University</span>
+            <a href="./projects/">Portfolio</a>
           </li>
           <li>
-            <h2>Skills:&nbsp;</h2>
-            <span class="info">
-              Analytical, Communication and Socialization
-            </span>
+            <a href="https://www.linkedin.com/in/manishmajhi/" target="_blank"
+              >LinkedIn</a
+            >
           </li>
           <li>
-            <h2>Time on Earth:&nbsp;</h2>
-            <span class="info" id="age"></span>
-            <script src="./js/age.js"></script>
+            <a href="#">Gallery</a>
           </li>
         </ul>
-      </details>
-    </main>
+      </nav>
+    </footer>
   </body>
 </html>

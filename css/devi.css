@@ -9,31 +9,26 @@ figure {
   margin-bottom: 1rem;
   text-align: center;
 }
+figure img {
+  height: 90dvh;
+}
 
 @media (orientation: landscape) {
   body {
     margin: 2rem auto;
-    width: 50dvw;
-  }
-  figure img {
-    height: 86vh;
+    width: 45dvw;
   }
 }
 @media (orientation: portrait) {
   body {
-    margin: 1.5rem;
-  }
-  figure img {
-    width: 90vw;
+    margin: 2rem;
   }
 }
 
-main {
-  font-size: 1.6rem;
+h1 {
+  text-align: center;
+  font-size: xx-large;
   color: hsl(0, 100%, 40%);
-}
-li {
-  margin-bottom: 0.5rem;
 }
 
 details {
@@ -44,7 +39,7 @@ details {
 }
 details summary {
   color: hsl(0, 0%, 75%);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: color 0.4s;
 }
@@ -59,4 +54,6 @@ details p {
   margin: 0.75rem 1rem;
   border-top: 1px dotted hsl(0, 0%, 50%);
   padding-top: 0.75rem;
+  line-height: 1.25rem;
+  font-size: 0.98rem;
 }
