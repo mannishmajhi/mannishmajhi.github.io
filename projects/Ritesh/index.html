@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan Helper</title>
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Simulator</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Loan Payment Simulation</h1>
     <div id="container">
-        <form>
-            <div class="grid-container">
-                <label for="loan">Loan Amount:</label>
-                <input type="number" id="loan" required>
+      <form>
+        <div class="grid-container">
+          <label for="loan">Loan Amount:</label>
+          <input type="number" id="loan" required />
 
-                <label for="rate">Annual Interest Rate (%):</label>
-                <input type="number" id="rate" required>
+          <label for="rate">Annual Interest Rate (%):</label>
+          <input type="number" id="rate" required />
 
-                <label for="installment">Monthly Installment:</label>
-                <input type="number" id="installment" required>
-            </div>
-            <div>
-                <input type="button" onclick="calculateLoan()" value="Calculate">
-                <p id="result"></p>
-            </div>
-        </form>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>S. No.</th>
-                    <th>Interest Accumulated</th>
-                    <th>Reduced Principal</th>
-                    <th>Remaining Loan</th>
-                </tr>
-            </thead>
-            <tbody id="loanTableBody"></tbody>
-        </table>
+          <label for="installment">Monthly Installment:</label>
+          <input type="number" id="installment" required />
+        </div>
+        <div>
+          <input type="button" onclick="calculateLoan()" value="Calculate" />
+          <p id="result"></p>
+        </div>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>S. No.</th>
+            <th>Interest Accumulated</th>
+            <th>Reduced Principal</th>
+            <th>Remaining Loan</th>
+          </tr>
+        </thead>
+        <tbody id="loanTableBody"></tbody>
+      </table>
     </div>
-</body>
+  </body>
 </html>

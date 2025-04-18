@@ -1,0 +1,9 @@
+h1 {
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+} 
+ul {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}

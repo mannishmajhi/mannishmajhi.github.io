@@ -9,19 +9,21 @@ header {
   font-weight: bold;
   text-align: center;
   text-decoration: underline;
+  text-underline-offset: 0.4rem;
   cursor: pointer;
 }
 
-article {
+q {
   margin: 1.75rem 0;
   line-height: 1.5rem;
+  display: block;
 }
-article::before {
+q::before {
   font-size: x-large;
   font-family: "Times New Roman", Times, serif;
   content: open-quote;
 }
-article::after {
+q::after {
   font-size: x-large;
   font-family: "Times New Roman", Times, serif;
   content: close-quote;

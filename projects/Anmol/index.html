@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Portal</title>
+    <title>Search Portal & MultiBase Calculator</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/colors.css" />
     <link rel="stylesheet" href="./css/dialog.css" />
@@ -56,7 +56,10 @@
       <button type="button" onclick="toggleCalculator('hide')">×</button>
       <h1>MultiBase Calculator</h1>
       <div id="first_num">
-        <select onchange="updatePattern()">
+        <select
+          onchange="updatePattern()"
+          title="Number system for the first number"
+        >
           <option value="2">Binary</option>
           <option value="5">Quinary</option>
           <option value="8">Octal</option>
@@ -72,7 +75,10 @@
         />
       </div>
       <div id="second_num">
-        <select onchange="updatePattern()">
+        <select
+          onchange="updatePattern()"
+          title="Number system for the second number"
+        >
           <option value="2">Binary</option>
           <option value="5">Quinary</option>
           <option value="8">Octal</option>
@@ -87,7 +93,10 @@
         />
       </div>
       <div id="operations">
-        <select onchange="updateResultBase()">
+        <select
+          onchange="updateResultBase()"
+          title="Number system for the result"
+        >
           <option value="2">Binary</option>
           <option value="5">Quinary</option>
           <option value="8">Octal</option>
