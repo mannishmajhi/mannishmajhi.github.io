@@ -25,13 +25,9 @@ function search() {
   if (engine === "bing") {
     var searchUrl = `https://www.bing.com/search?q=${encodeURIComponent(text)}`;
   } else if (engine === "google") {
-    var searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
-      text
-    )}`;
+    var searchUrl = `https://www.google.com/search?q=${encodeURIComponent(text)}&udm=14`;
   } else if (engine === "yahoo") {
-    var searchUrl = `https://search.yahoo.com/search?p=${encodeURIComponent(
-      text
-    )}`;
+    var searchUrl = `https://search.yahoo.com/search?p=${encodeURIComponent(text)}`;
   }
   window.location.href = searchUrl;
 }

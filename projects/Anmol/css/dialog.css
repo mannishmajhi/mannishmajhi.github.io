@@ -59,9 +59,6 @@
 #calculator select {
   padding: 0.8rem 0.4rem 0.8rem 0;
 }
-#calculator select:not(:-internal-list-box) {
-  background-color: transparent;
-}
 
 #calculator #first_num > input,
 #calculator #second_num > input {
