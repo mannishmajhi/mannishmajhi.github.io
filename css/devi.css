@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 0%);
   font-family: sans-serif, system-ui;
@@ -8,21 +9,6 @@ figure {
   margin: 0;
   margin-bottom: 1rem;
   text-align: center;
-}
-figure img {
-  height: 90dvh;
-}
-
-@media (orientation: landscape) {
-  body {
-    margin: 2rem auto;
-    width: 45dvw;
-  }
-}
-@media (orientation: portrait) {
-  body {
-    margin: 2rem;
-  }
 }
 
 h1 {
@@ -37,12 +23,14 @@ details {
   padding: 1rem;
   background-color: hsl(0, 0%, 6%);
 }
+
 details summary {
   color: hsl(0, 0%, 75%);
   font-size: 1.1rem;
   cursor: pointer;
   transition: color 0.4s;
 }
+
 summary:hover {
   color: hsl(0, 100%, 50%);
   cursor: pointer;
@@ -50,10 +38,36 @@ summary:hover {
 details[open] summary {
   color: hsl(0, 100%, 40%);
 }
+
 details p {
   margin: 0.75rem 1rem;
   border-top: 1px dotted hsl(0, 0%, 50%);
   padding-top: 0.75rem;
   line-height: 1.25rem;
   font-size: 0.98rem;
+}
+
+@media (orientation: landscape) {
+  body {
+    margin: 2rem auto;
+    width: 45dvw;
+  }
+
+  figure img {
+    height: 90dvh;
+  }
+}
+
+@media (orientation: portrait) {
+  :root {
+    --body-margin: 2rem;
+  }
+
+  body {
+    margin: var(--body-margin);
+  }
+
+  figure img {
+    width: calc(100dvw - (2 * var(--body-margin)));
+  }
 }

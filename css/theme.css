@@ -52,8 +52,9 @@ fieldset {
 }
 
 a {
-  color: #4795e1;
   text-decoration: none;
+  font-size: 1rem;
+  color: #4795e1;
 }
 a:hover {
   color: #9cdcfe;
